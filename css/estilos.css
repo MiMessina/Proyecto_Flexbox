@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+}
+.header{
+    height: 100vh;
+
+}
+.contenedorNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(69, 69, 69);
+    padding: 1.0rem 3rem;
+    height: 12%;
+}
+
+.contenedorLogo{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contenedorLogo h2{
+    color: white;
+}
+.contenedorLogo img{
+    width: 40%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.navegacion ul{
+    height: 100%    ;
+    display: flex;
+    list-style: none;
+}
+.linkNav{
+    text-decoration: none;
+    padding-left: 1.3rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+}
+.contenedorConferencia{
+    background:linear-gradient(to right, #0000009c,#0000009c ),url("../assets/img/ba1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 88%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: right;
+}
+.hijoConferencia{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    height: 50%;
+    padding-right: 5rem;
+}
+.hijoConferencia h1{
+    text-align: right;
+    color: white;
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+}
+.textoConferencia{
+    font-size: 25px;
+    font-size: 1.3rem;
+    line-height: 1.0;
+    font-weight: 500;
+    color: white;
+    text-align: right;
+
+}
+.btnFlex{
+    display: flex;
+    justify-content: right;
+    padding-top: 20px;
+    justify-content: s;
+}
+.btnQuieroserorador{
+        background-color: transparent;
+        font-size: 12px;
+        border-radius: 5px;
+        text-decoration: none;
+        color: white;
+        border: 1px solid grey;
+        padding: 8px;
+        margin-right: 14px;
+}
+.btnComprarTickets{
+    background-color: green;
+        font-size: 12px;
+        border-radius: 5px;
+        text-decoration: none;
+        color: white;
+        border: 1px;
+        padding: 8px;
+}
+.sectionOradores h2{
+    text-align: center;
+}
+.padreCards{
+    display: flex;
+    height: 100vh;
+    width: 80%;
+    text-align: left;
+    margin: 0 auto;
+}
+.padreCards img{
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+}
+.card{
+    display: inline-block;
+    width: 30%;
+    height: 75%;
+    border: 1px solid rgb(180, 180, 180);
+    margin: 15px;
+
+}
+.cardBody{
+    margin: 15px;
+}
+.caracteristicasCard{
+    display: flex;
+}
+.javascript{
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px;
+    padding: 3px;
+    background-color: rgb(255, 202, 29);
+}
+.react{
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px;
+    padding: 3px;
+    background-color: rgb(41, 149, 236);
+    color: white;
+}
+.padreLugarFecha{
+    display: flex;
+    flex-direction: row;
+    height: 70vh;
+}
+.padreLugarFecha img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-basis: 100%;
+}
+.textoLugarFecha{
+    text-align: left;
+    background-color: rgb(54, 54, 54);
+    width: 50%;
+    height: 100%;
+    color: white;
+    padding: 27px;
+}
+.textoLugarFecha p{
+    margin-bottom: 10px;
+}
+.btnConoceMas{
+        background-color: transparent;
+        font-size: 12px;
+        border-radius: 5px;
+        text-decoration: none;
+        color: white;
+        border: 1px solid grey;
+        padding: 7px;
+}
+.formulario{
+    text-align: center;
+    height: 60vh;
+    
+}
+.formulario h2{
+    margin: 10px;
+    font-size: 2rem;
+}
+.formulario span{
+    font-size: 0.6rem;
+    color: grey;
+}
+.formulario h3{
+    margin: 10px;
+    font-size: 1rem;
+    color: grey;
+}
+.camposFormulario{
+    margin: 10px;
+}
+.input{
+    height: 26px;
+    width: 351px;
+    background-color: #96c93e;
+    border-radius: 5px;
+    color: white;
+    border: none;
+}
+.footer{
+    background-color: #1e516e;
+    padding: 6vh;
+}
+.footer div a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    padding-left: 50px;
+}
+
+@media screen and (min-width:0px) and (max-width:1024px){
+    .contenedorNav{
+        flex-direction: column;
+        height: initial;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenedorLogo img{
+        width: 100%;
+    }
+    .navegacion .listaNav{
+        flex-direction: column;
+    }
+    .listaNav li{
+        padding-bottom: 10px;
+    }
+    .contenedorConferencia{
+        height: 73vh;
+        padding-top: 51px;
+        align-items: baseline;
+        
+    }
+    .hijoConferencia{
+        font-size: 2.2rem;
+    }
+    .textoConferencia{
+        font-size: 1rem;
+        line-height: 1.0;
+    }
+    .btnFlex{
+        display: flex;
+        flex-direction: column;
+    }
+    .btnQuieroserorador{
+        background-color: transparent;
+        font-size: 12px;
+        border-radius: 5px;
+        text-decoration: none;
+        color: white;
+        border: 1px solid grey;
+        padding: 5px;
+        margin-right: 0px;
+    }
+    .btnComprarTickets{
+        background-color: green;
+        font-size: 12px;
+        border-radius: 5px;
+        text-decoration: none;
+        color: white;
+        border: 1px;
+        padding: 8px;
+    }
+    
+    .sectionOradores{
+        height: 100%;
+    }
+    .padreCards{
+        flex-direction: column;
+        justify-content: center;
+        height: max-content;
+    }
+    .card{
+        width: auto;
+    }
+    .padreLugarFecha{
+        display: flex;
+        flex-direction: column;
+        height: 50vh;
+    }
+    .textoLugarFecha{
+        width: 100%;
+        height: auto;
+    }
+    .formulario{
+        text-align: center;
+        height: 49vh;   
+    }
+    .footer{
+        padding: 4vh;
+    }
+    .footer div a{
+        display:block;
+
+    }
+}
